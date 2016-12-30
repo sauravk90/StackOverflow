@@ -15,7 +15,6 @@ public class Login extends TestBase {
 	  loginObj.emailId.sendKeys("saurav.kumar90@hotmail.com");
 	  loginObj.password.sendKeys("Jaycutler1!");
 	  Driver.WaitAndClickElement(loginObj.submit);
-	  //sample
   }
   
 }
