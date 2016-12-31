@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="4806" started-at="2016-12-30T09:48:19Z" finished-at="2016-12-30T09:48:24Z">
+  <suite name="Suite" duration-ms="20252" started-at="2016-12-31T06:28:14Z" finished-at="2016-12-31T06:28:34Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="4806" started-at="2016-12-30T09:48:19Z" finished-at="2016-12-30T09:48:24Z">
+    <test name="Test" duration-ms="20252" started-at="2016-12-31T06:28:14Z" finished-at="2016-12-31T06:28:34Z">
       <class name="testScripts.Login">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testScripts.Login@3159c4b8]" name="setUp" is-config="true" duration-ms="4494" started-at="2016-12-30T15:18:15Z" finished-at="2016-12-30T15:18:19Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testScripts.Login@3159c4b8]" name="setUp" is-config="true" duration-ms="4296" started-at="2016-12-31T11:58:10Z" finished-at="2016-12-31T11:58:14Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ValidateLogin()[pri:0, instance:testScripts.Login@3159c4b8]" name="ValidateLogin" duration-ms="4784" started-at="2016-12-30T15:18:19Z" finished-at="2016-12-30T15:18:24Z">
+        <test-method status="PASS" signature="ValidateLogin()[pri:0, instance:testScripts.Login@3159c4b8]" name="ValidateLogin" duration-ms="20238" started-at="2016-12-31T11:58:14Z" finished-at="2016-12-31T11:58:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Login@3159c4b8]" name="tearDown" is-config="true" duration-ms="1589" started-at="2016-12-30T15:18:24Z" finished-at="2016-12-30T15:18:26Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Login@3159c4b8]" name="tearDown" is-config="true" duration-ms="1296" started-at="2016-12-31T11:58:34Z" finished-at="2016-12-31T11:58:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
