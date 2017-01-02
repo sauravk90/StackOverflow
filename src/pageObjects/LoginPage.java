@@ -6,6 +6,8 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import config.Driver;
+
 public class LoginPage {
 
 	private WebDriver driver;
@@ -14,17 +16,31 @@ public class LoginPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@CacheLookup
 	@FindBy (id = "email")
-	public WebElement emailId;
-	
+	WebElement emailId;
+
 	@CacheLookup
 	@FindBy (id = "password")
-	public WebElement password;
-	
+	WebElement password;
+
 	@CacheLookup
 	@FindBy (id = "submit-button")
-	public WebElement submit;
+	WebElement submit;
+
+	public void setEmail(String email){
+		emailId.clear();
+		emailId.sendKeys(email);
+	}
+
+	public void setPassword(String passwordText){
+		password.clear();
+		password.sendKeys(passwordText);
+	}
+
+	public void ClickOnSubmit(){
+		Driver.WaitAndClickElement(submit);
+	}
 	
 }

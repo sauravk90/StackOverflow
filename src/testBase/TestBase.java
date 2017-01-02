@@ -23,12 +23,11 @@ public class TestBase extends Driver {
 		Driver.Initialize(browser);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		//Comment Again nnnnnnn dx
 	}
 	
 	@AfterSuite
 	public void tearDown(){
 		driver.quit();
-		System.out.println("Test Execution was completed yet again!!!");
+		System.out.println("Test Execution was completed.");
 	}
 }

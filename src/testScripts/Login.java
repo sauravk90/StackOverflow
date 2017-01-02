@@ -12,9 +12,9 @@ public class Login extends TestBase {
 	  LoginPage loginObj = new LoginPage(driver);
 	  
 	  driver.get(Constants.baseUrl);
-	  loginObj.emailId.sendKeys("saurav.kumar90@hotmail.com");
-	  loginObj.password.sendKeys("Jaycutler1!");
-	  Driver.WaitAndClickElement(loginObj.submit);
+	  loginObj.setEmail("saurav.kumar90@hotmail.com");
+	  loginObj.setPassword("Jaycutler1!");
+	  loginObj.ClickOnSubmit();
   }
   
 }

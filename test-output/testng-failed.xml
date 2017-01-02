@@ -4,11 +4,15 @@
   <parameter name="browser" value="Chrome"/>
   <test name="Test(failed)">
     <classes>
+      <class name="testScripts.LoginDuplicate">
+        <methods>
+          <include name="ValidateLogin"/>
+        </methods>
+      </class> <!-- testScripts.LoginDuplicate -->
       <class name="testScripts.Login">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="ValidateLogin"/>
         </methods>
       </class> <!-- testScripts.Login -->
     </classes>
