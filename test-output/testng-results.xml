@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5226" started-at="2017-01-02T05:34:17Z" finished-at="2017-01-02T05:34:22Z">
+  <suite name="Suite" duration-ms="24542" started-at="2017-01-08T08:37:47Z" finished-at="2017-01-08T08:38:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="5226" started-at="2017-01-02T05:34:17Z" finished-at="2017-01-02T05:34:22Z">
+    <test name="Test" duration-ms="24542" started-at="2017-01-08T08:37:47Z" finished-at="2017-01-08T08:38:11Z">
       <class name="testScripts.Login">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testScripts.Login@73846619]" name="setUp" is-config="true" duration-ms="3777" started-at="2017-01-02T11:04:13Z" finished-at="2017-01-02T11:04:17Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testScripts.Login@148080bb]" name="setUp" is-config="true" duration-ms="4313" started-at="2017-01-08T14:07:42Z" finished-at="2017-01-08T14:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -18,21 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ValidateLogin()[pri:0, instance:testScripts.Login@73846619]" name="ValidateLogin" duration-ms="5214" started-at="2017-01-02T11:04:17Z" finished-at="2017-01-02T11:04:22Z">
+        <test-method status="PASS" signature="ValidateLogin()[pri:0, instance:testScripts.Login@148080bb]" name="ValidateLogin" duration-ms="24521" started-at="2017-01-08T14:07:47Z" finished-at="2017-01-08T14:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Login@73846619]" name="tearDown" is-config="true" duration-ms="1099" started-at="2017-01-02T11:04:22Z" finished-at="2017-01-02T11:04:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Login@148080bb]" name="tearDown" is-config="true" duration-ms="1613" started-at="2017-01-08T14:08:11Z" finished-at="2017-01-08T14:08:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testScripts.Login -->
-      <class name="testScripts.LoginDuplicate">
-        <test-method status="PASS" signature="ValidateLogin()[pri:0, instance:testScripts.LoginDuplicate@4bec1f0c]" name="ValidateLogin" duration-ms="1" started-at="2017-01-02T11:04:22Z" finished-at="2017-01-02T11:04:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateLogin -->
-      </class> <!-- testScripts.LoginDuplicate -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

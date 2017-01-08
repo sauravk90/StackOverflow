@@ -18,16 +18,20 @@ public class LoginPage {
 	}
 
 	@CacheLookup
-	@FindBy (id = "email")
+	@FindBy (id = "login_Layer")
+	WebElement loginText;
+	
+	@CacheLookup
+	@FindBy (id = "eLogin")
 	WebElement emailId;
 
 	@CacheLookup
-	@FindBy (id = "password")
+	@FindBy (id = "pLogin")
 	WebElement password;
 
 	@CacheLookup
-	@FindBy (id = "submit-button")
-	WebElement submit;
+	@FindBy (xpath = "//*[@id=\"lgnFrm\"]/div[8]/button")
+	WebElement loginButton;
 
 	public void setEmail(String email){
 		emailId.clear();
@@ -39,8 +43,12 @@ public class LoginPage {
 		password.sendKeys(passwordText);
 	}
 
-	public void ClickOnSubmit(){
-		Driver.WaitAndClickElement(submit);
+	public void LoginAndSubmitForm(String id, String password){
+		Driver.WaitAndClickElement(loginText);
+		setEmail(id);
+		setPassword(password);
+		Driver.WaitAndClickElement(loginButton);
+		
 	}
 	
 }

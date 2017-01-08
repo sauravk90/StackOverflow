@@ -4,7 +4,7 @@
    
     <classes>
       <class name="testScripts.Login"/>
-      <class name="testScripts.LoginDuplicate"/>
+      <!-- class name="testScripts.LoginDuplicate"/ -->
     </classes>
     
   </test> 

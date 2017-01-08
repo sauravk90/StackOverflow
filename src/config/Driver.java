@@ -1,19 +1,16 @@
 package config;
-
-import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
-import java.util.function.Function;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.lift.TestContext;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import org.openqa.selenium.JavascriptExecutor;
 
 import testBase.TestAutomationException;
@@ -27,7 +24,7 @@ public class Driver {
          switch (DriverType.valueOf(driverType))
          {
              case Chrome:
-                     InitializeChrome();
+                 InitializeChrome();
                  break;
                  
              case Firefox:
@@ -43,7 +40,13 @@ public class Driver {
 	 private static void InitializeChrome()
      {
 			System.setProperty("webdriver.chrome.driver","C:\\Users\\saurav.kumar\\Desktop\\Dumps\\New folder\\chromedriver\\chromedriver.exe");
-			driver = new ChromeDriver();
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			prefs.put("profile.default_content_setting_values.notifications", 2);
+			ChromeOptions options = new ChromeOptions();
+			options.setExperimentalOption("prefs", prefs);
+	        options.addArguments("test-type");
+	        options.addArguments("chrome.switches", "--disable-extensions");
+	        driver = new ChromeDriver( options);		
      }
 	 
 	 private static void InitializeFireFox()
