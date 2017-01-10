@@ -1,5 +1,4 @@
 package pageObjects;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -43,7 +42,7 @@ public class LoginPage {
 		password.sendKeys(passwordText);
 	}
 
-	public void LoginAndSubmitForm(String id, String password){
+	public void loginAndSubmitForm(String id, String password){
 		Driver.WaitAndClickElement(loginText);
 		setEmail(id);
 		setPassword(password);

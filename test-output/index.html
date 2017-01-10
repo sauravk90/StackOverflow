@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.Login" hash-for-method="ValidateLogin">ValidateLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.LoginAndEdit" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScripts.LoginAndEdit" hash-for-method="editProfile">editProfile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -119,14 +124,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testScripts.Login</span>
+              <span class="class-name">testScripts.LoginAndEdit</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ValidateLogin">
-                  </a> <!-- ValidateLogin -->
-                  <span class="method-name">ValidateLogin</span>
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfile">
+                  </a> <!-- editProfile -->
+                  <span class="method-name">editProfile</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,7 +156,7 @@
   &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScripts.Login&quot;/&gt;
+      &lt;class name=&quot;testScripts.LoginAndEdit&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -184,16 +196,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ValidateLogin')
-data.setCell(0, 2, 'testScripts.Login')
-data.setCell(0, 3, 24521);
+data.setCell(0, 1, 'Login')
+data.setCell(0, 2, 'testScripts.LoginAndEdit')
+data.setCell(0, 3, 12540);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'editProfile')
+data.setCell(1, 2, 'testScripts.LoginAndEdit')
+data.setCell(1, 3, 6504);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -219,18 +235,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScripts.Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScripts.LoginAndEdit</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">ValidateLogin</span>
-                <span class="method-start">4326 ms</span>
+                <span class="method-name">Login</span>
+                <span class="method-start">3976 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editProfile</span>
+                <span class="method-start">16520 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28926 ms</span>
+                <span class="method-start">23092 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -4,13 +4,13 @@
   <parameter name="browser" value="Chrome"/>
   <test name="Test(failed)">
     <classes>
-      <class name="testScripts.Login">
+      <class name="testScripts.LoginAndEdit">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="ValidateLogin"/>
+          <include name="editProfile"/>
         </methods>
-      </class> <!-- testScripts.Login -->
+      </class> <!-- testScripts.LoginAndEdit -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

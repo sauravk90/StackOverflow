@@ -3,7 +3,7 @@
   <test name="Test">
    
     <classes>
-      <class name="testScripts.Login"/>
+      <class name="testScripts.LoginAndEdit"/>
       <!-- class name="testScripts.LoginDuplicate"/ -->
     </classes>
     
