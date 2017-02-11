@@ -12,9 +12,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadWriteExcel  {
 
-	File src = new File("C:\\Users\\saurav.kumar\\Desktop\\Dumps\\New folder\\Credentials.xlsx");
+	static File src = new File("C:\\Users\\saurav.kumar\\Desktop\\Site\\Credentials.xlsx");
 	
-	public String ReadExcelByColandRow(int rowNum, int colNum) throws IOException{
+	public static String ReadExcelByColandRow(int rowNum, int colNum) throws IOException{
 		
 		FileInputStream fis = new FileInputStream(src);
 		XSSFWorkbook wBook = new XSSFWorkbook(fis);
@@ -36,7 +36,5 @@ public class ReadWriteExcel  {
 			return null;
 		
 	}
-	
-	
-	
+		
 }

@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="19081" started-at="2017-01-10T12:47:19Z" finished-at="2017-01-10T12:47:38Z">
+  <suite name="Suite" duration-ms="16235" started-at="2017-02-08T08:35:56Z" finished-at="2017-02-08T08:36:13Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="19081" started-at="2017-01-10T12:47:19Z" finished-at="2017-01-10T12:47:38Z">
+    <test name="Test" duration-ms="16235" started-at="2017-02-08T08:35:56Z" finished-at="2017-02-08T08:36:13Z">
       <class name="testScripts.LoginAndEdit">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testScripts.LoginAndEdit@148080bb]" name="setUp" is-config="true" duration-ms="3947" started-at="2017-01-10T18:17:15Z" finished-at="2017-01-10T18:17:19Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testScripts.LoginAndEdit@3532ec19]" name="setUp" is-config="true" duration-ms="3949" started-at="2017-02-08T14:05:53Z" finished-at="2017-02-08T14:05:56Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:testScripts.LoginAndEdit@148080bb]" name="Login" duration-ms="12540" started-at="2017-01-10T18:17:19Z" finished-at="2017-01-10T18:17:31Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:testScripts.LoginAndEdit@3532ec19]" name="Login" duration-ms="10243" started-at="2017-02-08T14:05:56Z" finished-at="2017-02-08T14:06:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="editProfile()[pri:0, instance:testScripts.LoginAndEdit@148080bb]" name="editProfile" duration-ms="6504" started-at="2017-01-10T18:17:31Z" finished-at="2017-01-10T18:17:38Z">
+        <test-method status="PASS" signature="editProfile()[pri:0, instance:testScripts.LoginAndEdit@3532ec19]" name="editProfile" duration-ms="5970" started-at="2017-02-08T14:06:07Z" finished-at="2017-02-08T14:06:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editProfile -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.LoginAndEdit@148080bb]" name="tearDown" is-config="true" duration-ms="1500" started-at="2017-01-10T18:17:38Z" finished-at="2017-01-10T18:17:39Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.LoginAndEdit@3532ec19]" name="tearDown" is-config="true" duration-ms="1126" started-at="2017-02-08T14:06:13Z" finished-at="2017-02-08T14:06:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

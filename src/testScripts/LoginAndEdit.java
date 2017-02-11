@@ -1,12 +1,16 @@
 package testScripts;
 
 import java.util.Set;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import pageObjects.LoginPage;
 import pageObjects.ProfileHomePage;
 import testBase.TestBase;
 import utilities.Constants;
+import utilities.ReadWriteExcel;
+import utilities.XMLParser;
 
 public class LoginAndEdit extends TestBase {
 	
@@ -27,9 +31,8 @@ public class LoginAndEdit extends TestBase {
 			System.out.println("closed id : " + id);
 		}
 			}
-
 	  driver.switchTo().window(homeWindow);
-      loginObj.loginAndSubmitForm("saurav.kumar90@hotmail.com","stonewarrior080");
+      loginObj.loginAndSubmitForm(XMLParser.ReadAndReturnXML().get("username"),XMLParser.ReadAndReturnXML().get("password"));
   }
   
   @Test
