@@ -2,8 +2,10 @@ package utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -33,8 +35,24 @@ public class ReadWriteExcel  {
 			return String.valueOf(cell.getBooleanCellValue());
 		}
 		else
-			return null;
-		
+			return null;	
 	}
 		
+	public static void WriteExcelByColAndRow(int rowNum, int colNum,String value) throws IOException{
+		FileInputStream fis = new FileInputStream(src);
+		XSSFWorkbook wBook = new XSSFWorkbook(fis);
+		XSSFSheet wsheet = wBook.getSheetAt(0);
+		XSSFRow row;
+		try
+		{	row = wsheet.getRow(rowNum);}
+		catch(Exception e){
+			row = wsheet.createRow(rowNum);
+		}
+		XSSFCell cell = row.createCell(colNum);
+		cell.setCellValue(value);	
+		
+		FileOutputStream outFile =new FileOutputStream(src);
+		wBook.write(outFile);
+		outFile.close();	
+	}
 }

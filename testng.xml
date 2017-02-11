@@ -4,7 +4,6 @@
    
     <classes>
       <class name="testScripts.LoginAndEdit"/>
-      <!-- class name="testScripts.LoginDuplicate"/ -->
     </classes>
     
   </test> 
