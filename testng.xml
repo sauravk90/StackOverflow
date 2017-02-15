@@ -1,10 +1,13 @@
 <suite name="Suite">
+<listeners>
+<listener class-name="testBase.TestNGCustomListener"/>
+</listeners>
 <parameter name="browser" value="Chrome"/> 
   <test name="Test">
    
     <classes>
       <class name="testScripts.LoginAndEdit"/>
-    </classes>
-    
+    </classes>   
+     
   </test> 
 </suite> 

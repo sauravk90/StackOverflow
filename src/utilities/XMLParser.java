@@ -25,7 +25,7 @@ public class XMLParser {
 	
 	doc.getDocumentElement().normalize();
 	
-	System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+	//System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
 	NodeList nList = doc.getElementsByTagName("credentials");
 	
 	for (int temp = 0; temp < nList.getLength(); temp++) {

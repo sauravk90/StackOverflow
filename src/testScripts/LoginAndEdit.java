@@ -28,7 +28,6 @@ public class LoginAndEdit extends TestBase {
 		if(!id.equals(homeWindow)){
 			driver.switchTo().window(id);
 			driver.close();
-			System.out.println("closed id : " + id);
 		}
 			}
 	  driver.switchTo().window(homeWindow);

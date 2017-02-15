@@ -41,7 +41,7 @@ public class ProfileHomePage {
 		updateProfileButton.click();
 		editElements.get(0).click();	
 		address.clear();
-		address.sendKeys("Plot No. KD-"+ randomNum + ", City Centre, Sector 4, Bokaro Steel City, Jharkhand");
+		address.sendKeys(randomNum + "/1, Balwir Niwas, Gautam Nagar, New Delhi - 110049");		
 		Driver.WaitAndClickElement(saveButton);
 	}
 }
