@@ -40,4 +40,9 @@ public class LoginAndEdit extends TestBase {
 	  profileObj.editAndSaveProfile();
 	  Assert.assertEquals(profileObj.message.getText(), "Your profile has been updated successfully");
   }
+
+  @Test
+  public void demo(){
+      System.out.println("In Demo method now!");
+  }
 }
